@@ -1,4 +1,5 @@
-from module_phone_book import show_menu
+from module_phone_book import show_menu, add_phone_num
+from time import sleep 
 
 while True:
     menu_num = show_menu()
@@ -7,8 +8,11 @@ while True:
         print('프로그램을 종료합니다.')
         break
     elif menu_num == 1:
-        pass
+        add_phone_num()
+        
     elif menu_num == 2:
         pass
     else:
         print('잘못된 입력입니다. 다시 입력해주세요.')
+        sleep(2)
+        
