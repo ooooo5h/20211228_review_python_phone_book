@@ -33,6 +33,7 @@ def show_all_phone_num():
         all_info_list = file.readlines()
         
         for info in all_info_list:
-                        
-            print(f'{info}\n')
+                    
+            info = info.strip()    
+            print(info)
         
