@@ -19,8 +19,20 @@ def add_phone_num():
     
     with open('phone_book.txt', 'a') as file:
         
-        input_info = f'{name}, {phone_num}, {memo}'
+        input_info = f'{name}, {phone_num}, {memo}\n'
         file.write(input_info)
     
     print('전화번호 등록이 완료되었습니다.')
     sleep(2)
+    
+# 2번 모든 목록 표시
+def show_all_phone_num():
+    
+    with open('phone_book.txt', 'r') as file:
+        
+        all_info_list = file.readlines()
+        
+        for info in all_info_list:
+                        
+            print(f'{info}\n')
+        
