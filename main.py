@@ -1,4 +1,4 @@
-from module_phone_book import show_menu, add_phone_num,show_all_phone_num
+from module_phone_book import show_menu, add_phone_num,show_all_phone_num, remove_all
 from time import sleep 
 
 while True:
@@ -12,6 +12,9 @@ while True:
         
     elif menu_num == 2:
         show_all_phone_num()
+        
+    elif menu_num == 3:
+        remove_all()
     else:
         print('잘못된 입력입니다. 다시 입력해주세요.')
         sleep(2)
